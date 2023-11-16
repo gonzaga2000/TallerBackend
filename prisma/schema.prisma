@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = "postgres://eqrvofpc:fF4Mrwh8215VtOrcMmMPwwmhYPrWX8do@bubble.db.elephantsql.com/eqrvofpc"
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 

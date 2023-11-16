@@ -40,7 +40,6 @@ router.get('/vuelos', async (req, res) => {
   //const respuesta = await procesarVuelos()
   res.send(jsonVuelos);
   }
-  
     );
 
 

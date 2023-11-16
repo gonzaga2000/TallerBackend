@@ -52,7 +52,7 @@ async function obtenerEdadPromedio(flightNumber) {
                 numeroAsiento: ticket.seatNumber,
             },
         });
-        console.log(updatedPasajero);
+        //console.log(updatedPasajero);
         passengers.push(pasajero)
     }
     // Calcular el promedio de edad
@@ -138,7 +138,7 @@ async function procesarVuelos() {
     let vuelosProcesados = [];
     let contador = 0;
     const vuelos =  await prisma.vuelos.findMany({take: 3240});
-    console.log(vuelos);
+    //console.log(vuelos);
     for (const vuelo of vuelos) {
         contador++;
         //console.log("vuelo con id: ", vuelo.flightNumber);
