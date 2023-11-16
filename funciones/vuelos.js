@@ -52,6 +52,7 @@ async function obtenerEdadPromedio(flightNumber) {
                 numeroAsiento: ticket.seatNumber,
             },
         });
+        console.log(updatedPasajero);
         passengers.push(pasajero)
     }
     // Calcular el promedio de edad
