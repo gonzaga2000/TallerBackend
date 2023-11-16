@@ -29,7 +29,8 @@ let jsonVuelos = {}
   // Obtiene los vuelos y todos los datos.
 router.get('/json', async (req, res) => {
   jsonVuelos = await procesarVuelos()
-  res.send("ok");
+  console.log("termino json")
+  res.send(jsonVuelos);
   }
     );
 
