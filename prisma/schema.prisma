@@ -1,0 +1,67 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+
+model Vuelos {
+  id               Int               @id @default(autoincrement())
+  flightNumber String            
+  originIATA String            
+  destinationIATA String            
+  airline String            
+  aircraftID String            
+}
+
+model Aircrafts {
+  id               Int               @id @default(autoincrement())
+  aircraftID String            
+  name String            
+  aircraftType String            
+}
+
+model Airports {
+  id               Int               @id @default(autoincrement())
+  airportIATA String            
+  name String            
+  city String            
+  country String            
+  lat Float  
+  lon Float           
+}
+
+model Passengers {
+  id               Int               @id @default(autoincrement())
+  passengerID String            
+  firstName String            
+  lastName String          
+  birthDate String            
+  gender String           
+  height String            
+  weight String
+  avatar String            
+  edad String
+  numeroAsiento String                            
+}
+
+model Tickets {
+  id               Int               @id @default(autoincrement())
+  ticketID String            
+  passengerID String           
+  flightNumber String            
+  flightType String            
+  seatNumber String              
+}
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+{
+    "vuelos":
+    [
+        {
+            "nombreOrigen":nombreOrigen(),
+            "nombreDestino":nombreDestino(),
+            "aerolinea":aerolinea(),
+            "nombreAvion": nombreAvion(),
+            "promedioEdad":promedioEdad(),
+            "distanciaRecorrida":distanciaRecorrida(),
+            "cantidadPasajeros": cantidadPasajeros()
+        }
+    ]
+}
